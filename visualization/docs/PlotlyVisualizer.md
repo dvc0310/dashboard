@@ -16,14 +16,8 @@ The `PlotlyVisualizer` class in the `visualization` package is responsible for g
     - [plot_granular_outage_vs_ppe](#plot_granular_outage_vs_ppe)
     - [plot_outage_per_ppe_over_time](#plot_outage_per_ppe_over_time)
     - [plot_outage_per_ppe_boxplot](#plot_outage_per_ppe_boxplot)
-4. [Private Methods](#private-methods)
-    - [__add_prediction_intervals](#__add_prediction_intervals)
-    - [__create_figure](#__create_figure)
-    - [__add_confidence_intervals](#__add_confidence_intervals)
-    - [__create_outage_time_plot](#__create_outage_time_plot)
-    - [__plot_percentiles](#__plot_percentiles)
-5. [Usage](#usage)
-6. [Conclusion](#conclusion)
+4. [Usage](#usage)
+5. [Conclusion](#conclusion)
 
 ## Initialization
 
