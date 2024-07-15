@@ -3,7 +3,7 @@
 
 ## Overview
 
-The `data_prep` package is designed to handle the preparation and transformation of data for a Dash web application. This package includes classes and utilities for processing outage data, financial data, and linking these datasets for visualization purposes.
+The `data_prep` package is designed to handle the preparation and transformation of data for a Dash web application. This package includes classes and utilities for processing outage data, financial data, and linking these datasets.
 
 ## Table of Contents
 
@@ -17,17 +17,17 @@ The `data_prep` package is designed to handle the preparation and transformation
 
 ## Components
 
-This package comprises several key components that manage different aspects of data handling:
+This package uses several key components that manage different aspects of data handling:
 
-- **OutageDataProcessor**: Manages the processing of outage data, including filtering and aggregating data based on specified criteria. [More Details](docs/OutageDataProcessor.md)
+- **OutageDataProcessor**: Manages the processing of outage data, which includes filtering and aggregating data based on specified criteria. [More Details](docs/OutageDataProcessor.md)
 - **FinancialDataTransformer**: Handles the transformation of financial data related to property, plant, and equipment (PP&E). [More Details](docs/FinancialDataTransformer.md)
-- **Utility Functions**: A collection of utility functions that assist in data manipulation and transformation tasks. [More Details](docs/read_util.md)
+- **Utility Functions**: A collection of utility functions that helps with data manipulation and transformation tasks. [More Details](docs/read_util.md)
 
 ## DataPreparer Class
 
 ### Overview
 
-The `DataPreparer` class orchestrates the preparation of data by utilizing the `OutageDataProcessor` and `FinancialDataTransformer` to process and link data effectively. This class ensures that the data from different sources is merged based on common identifiers such as 'Company', 'Year', and 'Quarter'.
+The `DataPreparer` class prepares the data by using the `OutageDataProcessor` and `FinancialDataTransformer` to process and link the data. The class makes sure that the data from different sources is merged based on common identifiers such as 'Company', 'Year', and 'Quarter'.
 
 ### Functions
 
@@ -38,4 +38,4 @@ The `DataPreparer` class orchestrates the preparation of data by utilizing the `
 
 ## Usage
 
-The `DataPreparer` class is utilized within the data preparation stage of the application lifecycle. It is typically called before visualization tasks to ensure that the data is properly prepared and saved.
+The `DataPreparer` class is used within the data preparation stage of the application lifecycle. It's called before visualization tasks to make sure that the data is properly prepared and saved.
