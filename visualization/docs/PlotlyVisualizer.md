@@ -15,11 +15,11 @@ The `PlotlyVisualizer` class in the `visualization` package is responsible for g
 
 ## Initialization
 
-### Constructor: `__init__(filename='prepared_data.csv', directory='visualization')`
+### Constructor: `__init__(filename='prepared_data.csv', directory='datasets')`
 - **Purpose**: Initializes a new instance of the `PlotlyVisualizer` with specified parameters.
 - **Parameters**:
   - `filename` (str, optional): The name of the CSV file containing the prepared data. Default is 'prepared_data.csv'.
-  - `directory` (str, optional): The directory where the data files are stored. Default is 'visualization'.
+  - `directory` (str, optional): The directory where the data files are stored. Default is 'datasets'.
 
 ### Example Usage
 
@@ -29,15 +29,15 @@ visualizer = PlotlyVisualizer(filename='prepared_data.csv', directory='visualiza
 
 ## Methods
 
-### `load_data()`
+### `load_data`
 - **Purpose**: Loads the data from the specified CSV file and initializes the `VisHelper` object for further data manipulation.
 - **Action**: Reads the CSV file, detects encoding, and loads the data into a DataFrame.
 
-### `update_data()`
+### `update_data`
 - **Purpose**: Reloads the data from the CSV file. This is useful if the data file has been updated.
 - **Action**: Calls `load_data()` to refresh the internal DataFrame.
 
-### `plot_average_outage_vs_ppe(ci=95, enable_interval=False, dashboard=False, selected_companies=None, start_date=None, end_date=None)`
+### `plot_average_outage_vs_ppe`
 - **Purpose**: Creates a scatter plot showing the average outage frequency versus average PP&E for selected companies and date ranges.
 - **Parameters**:
   - `enable_interval` (bool, optional): Whether to enable confidence intervals. Default is False.
@@ -47,7 +47,7 @@ visualizer = PlotlyVisualizer(filename='prepared_data.csv', directory='visualiza
   - `end_date` (str, optional): End date for filtering data.
 - **Returns**: A Plotly figure object if `dashboard` is True, otherwise displays the plot.
 
-### `plot_granular_outage_vs_ppe(pi=95, enable_interval=False, dashboard=False, selected_companies=None, start_date=None, end_date=None)`
+### `plot_granular_outage_vs_ppe`
 - **Purpose**: Creates a granular scatter plot showing outage frequency versus PP&E with optional prediction intervals.
 - **Parameters**:
   - `enable_interval` (bool, optional): Whether to enable prediction intervals. Default is False.
@@ -57,7 +57,7 @@ visualizer = PlotlyVisualizer(filename='prepared_data.csv', directory='visualiza
   - `end_date` (str, optional): End date for filtering data.
 - **Returns**: A Plotly figure object if `dashboard` is True, otherwise displays the plot.
 
-### `plot_outage_per_ppe_over_time(show_percentiles=True, dashboard=False, selected_companies=None, start_date=None, end_date=None)`
+### `plot_outage_per_ppe_over_time`
 - **Purpose**: Creates a line chart showing outage per PP&E over time for selected companies and date ranges.
 - **Parameters**:
   - `show_percentiles` (bool, optional): Whether to show percentile lines. Default is True.
@@ -67,7 +67,7 @@ visualizer = PlotlyVisualizer(filename='prepared_data.csv', directory='visualiza
   - `end_date` (str, optional): End date for filtering data.
 - **Returns**: A Plotly figure object if `dashboard` is True, otherwise displays the plot.
 
-### `plot_outage_per_ppe_boxplot(include_grand_total=False, dashboard=False, selected_companies=None, start_date=None, end_date=None)`
+### `plot_outage_per_ppe_boxplot`
 - **Purpose**: Creates a boxplot showing outage per PP&E for selected companies and date ranges.
 - **Parameters**:
   - `include_grand_total` (bool, optional): Whether to include a grand total in the plot. Default is False.
