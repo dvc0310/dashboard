@@ -60,4 +60,4 @@ The `tabs` module in the `frontend` package of the Dash web application provides
 
 ## Usage
 
-These tabs are integrated into the main layout of the Dash application and are interacted with through the user interface. Each tab responds to input changes and updates its display accordingly, making the application interactive and dynamic.
+These tabs are integrated into the main layout of the Dash application and are interacted with through the user interface. Each tab responds to input changes and updates its display accordingly.
