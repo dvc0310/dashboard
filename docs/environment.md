@@ -2,7 +2,7 @@
 
 ### Step 1: Download and Install Visual Studio Code
 
-Visual Studio Code is a powerful source code editor that runs on your desktop. It's available for Windows, macOS, and Linux.
+Visual Studio Code is available for Windows, macOS, and Linux.
 
 - **Download**: Go to the [Visual Studio Code website](https://code.visualstudio.com/) and download the version appropriate for your operating system.
 - **Install**: Follow the installation prompts to install VSCode on your machine.
