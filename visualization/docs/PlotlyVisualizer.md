@@ -10,12 +10,6 @@ The `PlotlyVisualizer` class in the `visualization` package is responsible for g
 1. [Overview](#overview)
 2. [Initialization](#initialization)
 3. [Methods](#methods)
-    - [load_data](#load_data)
-    - [update_data](#update_data)
-    - [plot_average_outage_vs_ppe](#plot_average_outage_vs_ppe)
-    - [plot_granular_outage_vs_ppe](#plot_granular_outage_vs_ppe)
-    - [plot_outage_per_ppe_over_time](#plot_outage_per_ppe_over_time)
-    - [plot_outage_per_ppe_boxplot](#plot_outage_per_ppe_boxplot)
 4. [Usage](#usage)
 5. [Conclusion](#conclusion)
 
