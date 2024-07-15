@@ -20,10 +20,10 @@
 
 **Function**: `update_graph_tab1`
 
-- **Purpose**: Updates the visualization in the first tab based on selected companies, confidence interval preferences, view mode, and selected date range.
+- **Purpose**: Updates the visualization in the first tab based on selected companies, interval preferences, view mode, and selected date range.
 - **Inputs**:
   - `company-dropdown-tab1`: Selected companies from a dropdown.
-  - `ci-checklist`: Determines whether to enable intervals.
+  - `checklist`: Determines whether to enable intervals.
   - `view-toggle`: Switch between 'Granular' and 'Aggregated' views.
   - `date-picker-range1`: Start and end dates from the date picker.
 - **Output**:
@@ -54,19 +54,6 @@
   - `date-picker-range3`: Start and end dates.
 - **Output**:
   - `graph-tab3`: Updates the box plot to reflect the current selections and settings.
-
-### Display Interval Options
-
-**Function**: `display_pi_options`
-
-- **Purpose**: Dynamically displays options for enabling intervals when the view mode is set to 'Granular'.
-- **Inputs**:
-  - `view-toggle`: The current view mode selected by the user.
-- **Output**:
-  - `pi-options`: Conditionally displays a checkbox for enabling intervals based on the view mode.
-
-#### Note: 
-The display_pi_options function is currently named that way because originally it was meant to only enable prediction intervals. It should more accurately be called `display_quantile_options` and `quantile-options` since this uses quantile regression under the hood.
 
 
 ## Usage

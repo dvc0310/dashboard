@@ -34,7 +34,7 @@ Before running this application, the following dependencies must be installed:
 These Python packages can be installed via pip:
 
 ```bash
-pip install dash plotly pandas scipy statsmodels faker
+pip install dash plotly pandas scipy statsmodels faker chardet
 ```
 
 Ensure that you have the following project-specific packages:

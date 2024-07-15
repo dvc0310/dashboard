@@ -4,13 +4,12 @@ def regression_tab(visualizer):
     return dcc.Tab(label='Outage Frequency vs PP&E', value='tab-1', children=[
         html.Div([__datepicker(visualizer=visualizer, number=1)]),
         html.Div([
-            __singular_checkbox(id='ci-checklist', label='Enable Interval', value='CI'),
+            __singular_checkbox(id='checklist', label='Enable Interval', value='Interval'),
             __toggle_switch(id='view-toggle', label1='Aggregated', label2='Granular', default='Aggregated')
         ]),
         html.Div([__dropdown(visualizer=visualizer, number=1)]),
         dcc.Graph(id='graph-tab1')
     ])
-
 
 def line_chart_tab(visualizer):
     return dcc.Tab(label='Outage over Time', value='tab-2', children=[
@@ -63,29 +62,3 @@ def __toggle_switch(id, label1, label2, default):
             style={'marginTop': 10, 'marginBottom': 10}
         )
     ])
-
-
-# Unused
-
-"""def upload_tab():
-    return dcc.Tab(label='Data Upload', value='tab-4', children=[
-        html.Div([
-            dcc.Upload(
-                id='upload-outage-data',
-                children=html.Button('Upload Outage Data'),
-                multiple=False
-            ),
-            html.Br(),
-            dcc.Upload(
-                id='upload-ppe-data',
-                children=html.Button('Upload PPE Data'),
-                multiple=False
-            ),
-            html.Br(),
-            html.Button('Process New Data', id='process-data-btn', n_clicks=0),
-            html.Div([
-                html.Div(id='upload-progress-bar', style={'width': '0%', 'height': '30px', 'background-color': '#007BFF'}),
-            ], style={'width': '100%', 'background-color': '#ddd', 'height': '30px'}),
-            html.Div(id='upload-status')
-        ])
-    ])"""

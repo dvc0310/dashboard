@@ -12,55 +12,45 @@ The `FinancialDataTransformer` class is specifically designed for loading, clean
 - **Parameters**:
   - `financial_data_file_name` (str): Filename of the financial data CSV file.
   - `folder` (str): Directory containing the data files, defaults to 'datasets'.
+  - `normalize` (bool): Divides the financial data by 1 billion if set to True
 - **Action**: Sets up the file path for the financial data and initializes placeholders for data handling.
 
-### `get_financial_data()`
-- **Purpose**: Retrieves the transformed financial data. If the data has not been prepared, it triggers the data loading and preparation sequence.
-- **Returns**: A DataFrame containing the prepared financial data.
-- **Process**:
-  1. Checks if data is already prepared; if not, calls `__load_financial_data()`.
-  2. Removes unnecessary columns with `__remove_column()`.
-  3. Transforms wide-format data into a long format using `__unpivot_data()`.
+### `get_financial_data`
+- **Purpose**: Retrieves the prepared financial data, ensuring it's loaded and prepared only once unless explicitly reset.
+- **Returns**: A pandas DataFrame containing the prepared financial data.
 
-### `set_financial_data(financial_data_file_name, folder='datasets')`
-- **Purpose**: Resets the financial data source and reloads the data based on the new source file.
-- **Action**: Updates the file path and reloads the data to refresh the internal state and data representations.
-
-### Private Methods
-
-#### `__load_financial_data()`
-- **Action**: Loads financial data from the CSV file. Ensures all necessary preprocessing steps are applied, including validation of column names and conversion of data types.
-- **Detailed Steps**:
-  1. Calls `read_file` to load data using the detected encoding.
-  2. Validates the presence and format of critical columns.
-  3. Converts string representations of numbers to numeric types.
-
-#### `__remove_column(column_name)`
-- **Purpose**: Removes a specified column from the DataFrame to streamline the dataset.
+### `set_financial_data(financial_data_file_name, folder='datasets', normalize=False)`
+- **Purpose**: Sets the financial data file path and loads the data by initiating the preparation process. Allows for reinitialization with new data parameters.
 - **Parameters**:
-  - `column_name` (str): Name of the column to be removed.
+  - `financial_data_file_name` (str): The name of the file containing the financial data.
+  - `folder` (str, optional): The directory where financial data files are stored. Defaults to 'datasets'.
+  - `normalize` (bool, optional): Whether to normalize the data during the preparation. Defaults to `False`.
+- **Action**: Resets the data preparation status and triggers reloading and re-preparing the data based on the new file path.
 
-#### `__unpivot_data(id_vars, var_name='Quarter', value_name='PP&E')`
-- **Purpose**: Transforms the dataset from a wide format (multiple PP&E columns per year) to a long format (single PP&E column with multiple rows).
-- **Action**: Uses Pandas `melt` function to reshape the DataFrame. This is particularly useful for merging with other datasets that require a uniform structure.
-
-#### `__validate_column_names()`
-- **Purpose**: Ensures that all column names in the financial data match expected patterns, crucial for subsequent data processing stages.
-- **Validation**:
-  - Checks if columns match the 'CQ{quarter_number}{year}' format and filters out irrelevant columns.
-
-#### `__convert_string_to_numeric()`
-- **Purpose**: Converts columns that should represent numeric values from strings to appropriate numeric types, handling non-convertible values gracefully.
+### `prepare_financial_data`
+- **Purpose**: Conducts a series of data preparation steps to ready the financial data for analysis.
+- **Steps**: Includes reading the data, aligning and formatting columns, filtering and converting data types, and more, as detailed in the method-specific documentation.
 
 ### Example of Usage
-Here is how you might typically instantiate and use the `FinancialDataTransformer` within a data processing workflow:
+Here is how you might typically instantiate and use the `FinancialDataTransformer`:
 
 ```python
 # Initialize the transformer
-financial_transformer = FinancialDataTransformer('financial_data_2023.csv')
+financial_transformer = FinancialDataTransformer('financial_data_2023.csv', 'data')
 
 # Retrieve and display the processed financial data
 processed_data = financial_transformer.get_financial_data()
 print(processed_data.head())
+
 ```
 
+```python
+# Initialize the transformer
+financial_transformer = FinancialDataTransformer('financial_data_2023.csv', 'data')
+
+# Set and display new financial data
+processed_data = financial_transformer.set_financial_data(('financial_data_2024.csv', 'datasets', False)
+processed_data = financial_transformer.get_financial_data()
+print(processed_data.head())
+
+```

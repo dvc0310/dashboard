@@ -13,6 +13,7 @@ def parse_args():
     parser.add_argument('--directory', type=str, default='datasets', help='Directory where data files are stored')
     parser.add_argument('--outage_file', type=str, required=True, help='Filename of the outage data file')
     parser.add_argument('--ppe_file', type=str, required=True, help='Filename of the property, plant, and equipment data file')
+    
     return parser.parse_args()
 
 def main():
@@ -30,7 +31,7 @@ def main():
             raise FileNotFoundError("One or more specified data files are missing.")
 
         # Data preparation using the specified files
-        dataprep = DataPreparer(folder=args.directory, outage_file_name=args.outage_file, financial_file_name=args.ppe_file)
+        dataprep = DataPreparer(folder=args.directory, outage_file_name=args.outage_file, financial_file_name=args.ppe_file,normalize=True)
         dataprep.save_to_csv(folder=args.directory)
         prepared_data_file = 'prepared_data.csv'
         visualizer = PlotlyVisualizer(filename=prepared_data_file, directory=args.directory)
@@ -41,7 +42,7 @@ def main():
             webbrowser.open_new("http://127.0.0.1:8050/")
 
         Timer(1, open_browser).start()
-        app.run_server(debug=False)
+        app.run_server(debug=True)
         
     except FileNotFoundError as e:
         print(f"Error: {e}")

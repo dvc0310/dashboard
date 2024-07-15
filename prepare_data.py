@@ -13,7 +13,7 @@ def parse_args():
 def prepare_data(directory, outage_file, ppe_file):
     """Prepare the data using the DataPreparer module and save it to CSV."""
     try:
-        dataprep = DataPreparer(folder=directory, outage_file_name=outage_file, financial_file_name=ppe_file)
+        dataprep = DataPreparer(folder=directory, outage_file_name=outage_file, financial_file_name=ppe_file,normalize=True)
         dataprep.save_to_csv(folder=directory)
         print(f"Data has been prepared and saved in {directory}.")
     except FileNotFoundError as e:

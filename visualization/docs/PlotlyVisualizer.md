@@ -49,22 +49,20 @@ visualizer = PlotlyVisualizer(filename='prepared_data.csv', directory='visualiza
 - **Purpose**: Reloads the data from the CSV file. This is useful if the data file has been updated.
 - **Action**: Calls `load_data()` to refresh the internal DataFrame.
 
-### `plot_average_outage_vs_ppe(ci=95, enable_ci=False, dashboard=False, selected_companies=None, start_date=None, end_date=None)`
+### `plot_average_outage_vs_ppe(ci=95, enable_interval=False, dashboard=False, selected_companies=None, start_date=None, end_date=None)`
 - **Purpose**: Creates a scatter plot showing the average outage frequency versus average PP&E for selected companies and date ranges.
 - **Parameters**:
-  - `ci` (int, optional): Confidence interval percentage. Default is 95.
-  - `enable_ci` (bool, optional): Whether to enable confidence intervals. Default is False.
+  - `enable_interval` (bool, optional): Whether to enable confidence intervals. Default is False.
   - `dashboard` (bool, optional): If True, returns the figure object instead of displaying it. Default is False.
   - `selected_companies` (list, optional): List of selected companies to include in the plot.
   - `start_date` (str, optional): Start date for filtering data.
   - `end_date` (str, optional): End date for filtering data.
 - **Returns**: A Plotly figure object if `dashboard` is True, otherwise displays the plot.
 
-### `plot_granular_outage_vs_ppe(pi=95, enable_pi=False, dashboard=False, selected_companies=None, start_date=None, end_date=None)`
+### `plot_granular_outage_vs_ppe(pi=95, enable_interval=False, dashboard=False, selected_companies=None, start_date=None, end_date=None)`
 - **Purpose**: Creates a granular scatter plot showing outage frequency versus PP&E with optional prediction intervals.
 - **Parameters**:
-  - `pi` (int, optional): Prediction interval percentage. Default is 95.
-  - `enable_pi` (bool, optional): Whether to enable prediction intervals. Default is False.
+  - `enable_interval` (bool, optional): Whether to enable prediction intervals. Default is False.
   - `dashboard` (bool, optional): If True, returns the figure object instead of displaying it. Default is False.
   - `selected_companies` (list, optional): List of selected companies to include in the plot.
   - `start_date` (str, optional): Start date for filtering data.
@@ -91,51 +89,6 @@ visualizer = PlotlyVisualizer(filename='prepared_data.csv', directory='visualiza
   - `end_date` (str, optional): End date for filtering data.
 - **Returns**: A Plotly figure object if `dashboard` is True, otherwise displays the plot.
 
-## Private Methods
-
-### `__add_prediction_intervals(fig, line_x, pi_upper, pi_lower, slope95, intercept95, slope5, intercept5)`
-- **Purpose**: Adds prediction interval lines to the figure.
-- **Parameters**:
-  - `fig`: The Plotly figure object.
-  - `line_x`: X-values for the prediction intervals.
-  - `pi_upper`: Upper prediction interval line values.
-  - `pi_lower`: Lower prediction interval line values.
-  - `slope95`: Slope of the 95th quantile regression line.
-  - `intercept95`: Intercept of the 95th quantile regression line.
-  - `slope5`: Slope of the 5th quantile regression line.
-  - `intercept5`: Intercept of the 5th quantile regression line.
-
-### `__create_figure(grouped_df, line_x, line_y, slope, intercept, r_value=None, pi=False)`
-- **Purpose**: Creates a scatter plot with a regression line.
-- **Parameters**:
-  - `grouped_df`: DataFrame with grouped data.
-  - `line_x`: X-values for the regression line.
-  - `line_y`: Y-values for the regression line.
-  - `slope`: Slope of the regression line.
-  - `intercept`: Intercept of the regression line.
-  - `r_value` (optional): Correlation coefficient.
-  - `pi` (bool, optional): Whether the plot is for prediction intervals. Default is False.
-- **Returns**: A Plotly figure object and initial sizes for scatter plot markers.
-
-### `__add_confidence_intervals(fig, line_x, ci_upper, ci_lower)`
-- **Purpose**: Adds confidence interval lines to the figure.
-- **Parameters**:
-  - `fig`: The Plotly figure object.
-  - `line_x`: X-values for the confidence intervals.
-  - `ci_upper`: Upper confidence interval line values.
-  - `ci_lower`: Lower confidence interval line values.
-
-### `__create_outage_time_plot(df_filtered)`
-- **Purpose**: Creates a line chart showing outage per PP&E over time.
-- **Parameters**:
-  - `df_filtered`: Filtered DataFrame.
-- **Returns**: A Plotly figure object.
-
-### `__plot_percentiles(df_filtered, fig)`
-- **Purpose**: Plots percentile lines on the line chart.
-- **Parameters**:
-  - `df_filtered`: Filtered DataFrame.
-  - `fig`: The Plotly figure object.
 
 ## Usage
 

@@ -1,211 +1,85 @@
 Company,Year,Quarter,Count,PP&E
-AT&T Inc.,2016,Q3,568,123.922
-AT&T Inc.,2016,Q4,689,124.899
-AT&T Inc.,2017,Q1,671,125.292
-AT&T Inc.,2017,Q2,654,126.184
-AT&T Inc.,2017,Q3,665,126.462
-AT&T Inc.,2017,Q4,650,125.222
-AT&T Inc.,2018,Q1,658,125.124
-AT&T Inc.,2018,Q2,641,129.556
-AT&T Inc.,2018,Q3,646,130.348
-AT&T Inc.,2018,Q4,723,131.473
-AT&T Inc.,2019,Q1,634,152.286
-AT&T Inc.,2019,Q2,656,154.724
-AT&T Inc.,2019,Q3,701,155.793
-AT&T Inc.,2019,Q4,632,154.167
-AT&T Inc.,2020,Q1,647,152.929
-AT&T Inc.,2020,Q2,673,153.637
-AT&T Inc.,2020,Q3,674,153.268
-AT&T Inc.,2020,Q4,699,152.029
-AT&T Inc.,2021,Q1,646,149.022
-AT&T Inc.,2021,Q2,693,147.981
-AT&T Inc.,2021,Q3,687,148.76
-AT&T Inc.,2021,Q4,698,143.473
-AT&T Inc.,2022,Q1,654,151.1
-AT&T Inc.,2022,Q2,658,146.943
-AT&T Inc.,2022,Q3,671,148.827
-AT&T Inc.,2022,Q4,621,149.259
-AT&T Inc.,2023,Q1,666,150.077
-AT&T Inc.,2023,Q2,635,150.364
-AT&T Inc.,2023,Q3,659,149.497
-AT&T Inc.,2023,Q4,696,149.497
-"Charter Communications, Inc.",2016,Q3,329,32.881
-"Charter Communications, Inc.",2016,Q4,338,32.963
-"Charter Communications, Inc.",2017,Q1,394,32.699
-"Charter Communications, Inc.",2017,Q2,314,32.948
-"Charter Communications, Inc.",2017,Q3,341,33.3
-"Charter Communications, Inc.",2017,Q4,316,33.888
-"Charter Communications, Inc.",2018,Q1,323,34.002
-"Charter Communications, Inc.",2018,Q2,349,34.411
-"Charter Communications, Inc.",2018,Q3,326,34.74
-"Charter Communications, Inc.",2018,Q4,332,35.126
-"Charter Communications, Inc.",2019,Q1,314,35.96
-"Charter Communications, Inc.",2019,Q2,339,35.641
-"Charter Communications, Inc.",2019,Q3,322,35.321
-"Charter Communications, Inc.",2019,Q4,344,35.683
-"Charter Communications, Inc.",2020,Q1,306,35.192
-"Charter Communications, Inc.",2020,Q2,341,35.206
-"Charter Communications, Inc.",2020,Q3,324,35.353
-"Charter Communications, Inc.",2020,Q4,315,35.571
-"Charter Communications, Inc.",2021,Q1,296,35.426
-"Charter Communications, Inc.",2021,Q2,312,35.494
-"Charter Communications, Inc.",2021,Q3,338,35.458
-"Charter Communications, Inc.",2021,Q4,333,35.616
-"Charter Communications, Inc.",2022,Q1,322,34.173
-"Charter Communications, Inc.",2022,Q2,317,34.472
-"Charter Communications, Inc.",2022,Q3,344,35.005
-"Charter Communications, Inc.",2022,Q4,339,37.274
-"Charter Communications, Inc.",2023,Q1,316,36.602
-"Charter Communications, Inc.",2023,Q2,334,37.546
-"Charter Communications, Inc.",2023,Q3,310,38.617
-"Charter Communications, Inc.",2023,Q4,336,38.617
-Comcast Corporation,2016,Q3,1173,35.656
-Comcast Corporation,2016,Q4,1314,36.253
-Comcast Corporation,2017,Q1,1321,36.626
-Comcast Corporation,2017,Q2,1340,37.171
-Comcast Corporation,2017,Q3,1348,37.856
-Comcast Corporation,2017,Q4,1307,38.47
-Comcast Corporation,2018,Q1,1252,39.068
-Comcast Corporation,2018,Q2,1348,39.355
-Comcast Corporation,2018,Q3,1370,39.855
-Comcast Corporation,2018,Q4,1360,44.437
-Comcast Corporation,2019,Q1,1298,49.821
-Comcast Corporation,2019,Q2,1332,50.11
-Comcast Corporation,2019,Q3,1267,50.801
-Comcast Corporation,2019,Q4,1317,52.36
-Comcast Corporation,2020,Q1,1330,48.442
-Comcast Corporation,2020,Q2,1352,48.985
-Comcast Corporation,2020,Q3,1291,50.466
-Comcast Corporation,2020,Q4,1295,55.779
-Comcast Corporation,2021,Q1,1339,52.317
-Comcast Corporation,2021,Q2,1328,52.769
-Comcast Corporation,2021,Q3,1282,52.809
-Comcast Corporation,2021,Q4,1301,60.514
-Comcast Corporation,2022,Q1,1313,53.82
-Comcast Corporation,2022,Q2,1295,53.508
-Comcast Corporation,2022,Q3,1360,53.555
-Comcast Corporation,2022,Q4,1354,61.482
-Comcast Corporation,2023,Q1,1338,56.279
-Comcast Corporation,2023,Q2,1323,56.851
-Comcast Corporation,2023,Q3,1342,58.165
-Comcast Corporation,2023,Q4,1341,58.165
-"Frontier Communications Parent, Inc.",2016,Q3,315,14.899
-"Frontier Communications Parent, Inc.",2016,Q4,356,14.902
-"Frontier Communications Parent, Inc.",2017,Q1,310,14.616
-"Frontier Communications Parent, Inc.",2017,Q2,351,14.482
-"Frontier Communications Parent, Inc.",2017,Q3,326,14.375
-"Frontier Communications Parent, Inc.",2017,Q4,333,14.377
-"Frontier Communications Parent, Inc.",2018,Q1,329,14.321
-"Frontier Communications Parent, Inc.",2018,Q2,349,14.282
-"Frontier Communications Parent, Inc.",2018,Q3,351,14.268
-"Frontier Communications Parent, Inc.",2018,Q4,323,14.187
-"Frontier Communications Parent, Inc.",2019,Q1,334,14.237
-"Frontier Communications Parent, Inc.",2019,Q2,310,13.197
-"Frontier Communications Parent, Inc.",2019,Q3,320,13.169
-"Frontier Communications Parent, Inc.",2019,Q4,313,13.167
-"Frontier Communications Parent, Inc.",2020,Q1,330,12.89
-"Frontier Communications Parent, Inc.",2020,Q2,337,12.845
-"Frontier Communications Parent, Inc.",2020,Q3,344,12.858
-"Frontier Communications Parent, Inc.",2020,Q4,301,13.146
-"Frontier Communications Parent, Inc.",2021,Q1,329,12.987
-"Frontier Communications Parent, Inc.",2021,Q2,323,8.686
-"Frontier Communications Parent, Inc.",2021,Q3,343,8.918
-"Frontier Communications Parent, Inc.",2021,Q4,291,9.399
-"Frontier Communications Parent, Inc.",2022,Q1,345,9.575
-"Frontier Communications Parent, Inc.",2022,Q2,287,10.108
-"Frontier Communications Parent, Inc.",2022,Q3,332,10.847
-"Frontier Communications Parent, Inc.",2022,Q4,336,12.037
-"Frontier Communications Parent, Inc.",2023,Q1,341,12.748
-"Frontier Communications Parent, Inc.",2023,Q2,312,13.353
-"Frontier Communications Parent, Inc.",2023,Q3,296,13.621
-"Frontier Communications Parent, Inc.",2023,Q4,278,13.621
-"Lumen Technologies, Inc.",2016,Q3,591,17.84
-"Lumen Technologies, Inc.",2016,Q4,656,17.039
-"Lumen Technologies, Inc.",2017,Q1,680,17.016
-"Lumen Technologies, Inc.",2017,Q2,650,17.583
-"Lumen Technologies, Inc.",2017,Q3,649,17.634
-"Lumen Technologies, Inc.",2017,Q4,634,26.852
-"Lumen Technologies, Inc.",2018,Q1,643,26.826
-"Lumen Technologies, Inc.",2018,Q2,686,26.494
-"Lumen Technologies, Inc.",2018,Q3,636,26.168
-"Lumen Technologies, Inc.",2018,Q4,646,26.408
-"Lumen Technologies, Inc.",2019,Q1,670,27.745
-"Lumen Technologies, Inc.",2019,Q2,633,27.704
-"Lumen Technologies, Inc.",2019,Q3,688,27.595
-"Lumen Technologies, Inc.",2019,Q4,649,27.765
-"Lumen Technologies, Inc.",2020,Q1,589,27.623
-"Lumen Technologies, Inc.",2020,Q2,674,26.079
-"Lumen Technologies, Inc.",2020,Q3,637,26.29
-"Lumen Technologies, Inc.",2020,Q4,664,28.037
-"Lumen Technologies, Inc.",2021,Q1,634,26.091
-"Lumen Technologies, Inc.",2021,Q2,674,25.993
-"Lumen Technologies, Inc.",2021,Q3,663,20.926
-"Lumen Technologies, Inc.",2021,Q4,656,22.346
-"Lumen Technologies, Inc.",2022,Q1,659,20.829
-"Lumen Technologies, Inc.",2022,Q2,701,20.72
-"Lumen Technologies, Inc.",2022,Q3,644,20.713
-"Lumen Technologies, Inc.",2022,Q4,605,20.506
-"Lumen Technologies, Inc.",2023,Q1,611,19.321
-"Lumen Technologies, Inc.",2023,Q2,657,19.432
-"Lumen Technologies, Inc.",2023,Q3,639,19.606
-"Lumen Technologies, Inc.",2023,Q4,649,19.606
-"T-Mobile US, Inc.",2016,Q3,259,20.574
-"T-Mobile US, Inc.",2016,Q4,320,20.943
-"T-Mobile US, Inc.",2017,Q1,343,21.235
-"T-Mobile US, Inc.",2017,Q2,331,21.423
-"T-Mobile US, Inc.",2017,Q3,338,21.57
-"T-Mobile US, Inc.",2017,Q4,328,22.196
-"T-Mobile US, Inc.",2018,Q1,343,22.308
-"T-Mobile US, Inc.",2018,Q2,291,22.375
-"T-Mobile US, Inc.",2018,Q3,347,22.502
-"T-Mobile US, Inc.",2018,Q4,359,23.359
-"T-Mobile US, Inc.",2019,Q1,326,33.312
-"T-Mobile US, Inc.",2019,Q2,321,34.875
-"T-Mobile US, Inc.",2019,Q3,341,35.867
-"T-Mobile US, Inc.",2019,Q4,371,35.632
-"T-Mobile US, Inc.",2020,Q1,321,35.854
-"T-Mobile US, Inc.",2020,Q2,322,59.335
-"T-Mobile US, Inc.",2020,Q3,352,69.604
-"T-Mobile US, Inc.",2020,Q4,349,72.224
-"T-Mobile US, Inc.",2021,Q1,330,71.241
-"T-Mobile US, Inc.",2021,Q2,313,70.335
-"T-Mobile US, Inc.",2021,Q3,337,70.197
-"T-Mobile US, Inc.",2021,Q4,342,70.084
-"T-Mobile US, Inc.",2022,Q1,306,74.742
-"T-Mobile US, Inc.",2022,Q2,317,73.943
-"T-Mobile US, Inc.",2022,Q3,324,73.917
-"T-Mobile US, Inc.",2022,Q4,321,74.058
-"T-Mobile US, Inc.",2023,Q1,306,73.481
-"T-Mobile US, Inc.",2023,Q2,330,73.06
-"T-Mobile US, Inc.",2023,Q3,353,72.038
-"T-Mobile US, Inc.",2023,Q4,342,72.038
-Verizon Communications Inc.,2016,Q3,928,83.414
-Verizon Communications Inc.,2016,Q4,998,84.751
-Verizon Communications Inc.,2017,Q1,1027,85.213
-Verizon Communications Inc.,2017,Q2,1009,86.521
-Verizon Communications Inc.,2017,Q3,1016,86.622
-Verizon Communications Inc.,2017,Q4,958,88.568
-Verizon Communications Inc.,2018,Q1,924,87.922
-Verizon Communications Inc.,2018,Q2,959,87.781
-Verizon Communications Inc.,2018,Q3,984,87.464
-Verizon Communications Inc.,2018,Q4,1040,89.286
-Verizon Communications Inc.,2019,Q1,931,110.954
-Verizon Communications Inc.,2019,Q2,913,110.285
-Verizon Communications Inc.,2019,Q3,1005,111.067
-Verizon Communications Inc.,2019,Q4,1040,114.609
-Verizon Communications Inc.,2020,Q1,1028,114.649
-Verizon Communications Inc.,2020,Q2,979,115.185
-Verizon Communications Inc.,2020,Q3,961,115.862
-Verizon Communications Inc.,2020,Q4,974,117.364
-Verizon Communications Inc.,2021,Q1,941,117.191
-Verizon Communications Inc.,2021,Q2,1006,122.382
-Verizon Communications Inc.,2021,Q3,1021,123.725
-Verizon Communications Inc.,2021,Q4,1005,127.579
-Verizon Communications Inc.,2022,Q1,976,127.337
-Verizon Communications Inc.,2022,Q2,973,128.408
-Verizon Communications Inc.,2022,Q3,1024,129.592
-Verizon Communications Inc.,2022,Q4,981,133.564
-Verizon Communications Inc.,2023,Q1,911,132.934
-Verizon Communications Inc.,2023,Q2,952,132.615
-Verizon Communications Inc.,2023,Q3,997,132.576
-Verizon Communications Inc.,2023,Q4,1018,133.036
+AT&T Inc.,2021,Q1,211,149.022
+AT&T Inc.,2021,Q2,224,147.981
+AT&T Inc.,2021,Q3,235,148.76
+AT&T Inc.,2021,Q4,229,143.473
+AT&T Inc.,2022,Q1,216,151.1
+AT&T Inc.,2022,Q2,197,146.943
+AT&T Inc.,2022,Q3,209,148.827
+AT&T Inc.,2022,Q4,199,149.259
+AT&T Inc.,2023,Q1,208,150.077
+AT&T Inc.,2023,Q2,228,150.364
+AT&T Inc.,2023,Q3,233,149.497
+AT&T Inc.,2023,Q4,241,149.497
+"Charter Communications, Inc.",2021,Q1,90,35.426
+"Charter Communications, Inc.",2021,Q2,105,35.494
+"Charter Communications, Inc.",2021,Q3,120,35.458
+"Charter Communications, Inc.",2021,Q4,88,35.616
+"Charter Communications, Inc.",2022,Q1,123,34.173
+"Charter Communications, Inc.",2022,Q2,112,34.472
+"Charter Communications, Inc.",2022,Q3,115,35.005
+"Charter Communications, Inc.",2022,Q4,105,37.274
+"Charter Communications, Inc.",2023,Q1,107,36.602
+"Charter Communications, Inc.",2023,Q2,114,37.546
+"Charter Communications, Inc.",2023,Q3,118,38.617
+"Charter Communications, Inc.",2023,Q4,115,38.617
+Comcast Corporation,2021,Q1,421,52.317
+Comcast Corporation,2021,Q2,434,52.769
+Comcast Corporation,2021,Q3,413,52.809
+Comcast Corporation,2021,Q4,477,60.514
+Comcast Corporation,2022,Q1,432,53.82
+Comcast Corporation,2022,Q2,430,53.508
+Comcast Corporation,2022,Q3,426,53.555
+Comcast Corporation,2022,Q4,443,61.482
+Comcast Corporation,2023,Q1,454,56.279
+Comcast Corporation,2023,Q2,444,56.851
+Comcast Corporation,2023,Q3,422,58.165
+Comcast Corporation,2023,Q4,464,58.165
+"Frontier Communications Parent, Inc.",2021,Q1,96,12.987
+"Frontier Communications Parent, Inc.",2021,Q2,93,8.686
+"Frontier Communications Parent, Inc.",2021,Q3,126,8.918
+"Frontier Communications Parent, Inc.",2021,Q4,93,9.399
+"Frontier Communications Parent, Inc.",2022,Q1,111,9.575
+"Frontier Communications Parent, Inc.",2022,Q2,93,10.108
+"Frontier Communications Parent, Inc.",2022,Q3,107,10.847
+"Frontier Communications Parent, Inc.",2022,Q4,117,12.037
+"Frontier Communications Parent, Inc.",2023,Q1,109,12.748
+"Frontier Communications Parent, Inc.",2023,Q2,99,13.353
+"Frontier Communications Parent, Inc.",2023,Q3,108,13.621
+"Frontier Communications Parent, Inc.",2023,Q4,84,13.621
+"Lumen Technologies, Inc.",2021,Q1,201,26.091
+"Lumen Technologies, Inc.",2021,Q2,226,25.993
+"Lumen Technologies, Inc.",2021,Q3,210,20.926
+"Lumen Technologies, Inc.",2021,Q4,233,22.346
+"Lumen Technologies, Inc.",2022,Q1,227,20.829
+"Lumen Technologies, Inc.",2022,Q2,221,20.72
+"Lumen Technologies, Inc.",2022,Q3,194,20.713
+"Lumen Technologies, Inc.",2022,Q4,208,20.506
+"Lumen Technologies, Inc.",2023,Q1,186,19.321
+"Lumen Technologies, Inc.",2023,Q2,203,19.432
+"Lumen Technologies, Inc.",2023,Q3,200,19.606
+"Lumen Technologies, Inc.",2023,Q4,231,19.606
+"T-Mobile US, Inc.",2021,Q1,101,71.241
+"T-Mobile US, Inc.",2021,Q2,106,70.335
+"T-Mobile US, Inc.",2021,Q3,112,70.197
+"T-Mobile US, Inc.",2021,Q4,120,70.084
+"T-Mobile US, Inc.",2022,Q1,107,74.742
+"T-Mobile US, Inc.",2022,Q2,114,73.943
+"T-Mobile US, Inc.",2022,Q3,114,73.917
+"T-Mobile US, Inc.",2022,Q4,96,74.058
+"T-Mobile US, Inc.",2023,Q1,100,73.481
+"T-Mobile US, Inc.",2023,Q2,104,73.06
+"T-Mobile US, Inc.",2023,Q3,130,72.038
+"T-Mobile US, Inc.",2023,Q4,118,72.038
+Verizon Communications Inc.,2021,Q1,306,117.191
+Verizon Communications Inc.,2021,Q2,311,122.382
+Verizon Communications Inc.,2021,Q3,362,123.725
+Verizon Communications Inc.,2021,Q4,356,127.579
+Verizon Communications Inc.,2022,Q1,335,127.337
+Verizon Communications Inc.,2022,Q2,307,128.408
+Verizon Communications Inc.,2022,Q3,358,129.592
+Verizon Communications Inc.,2022,Q4,327,133.564
+Verizon Communications Inc.,2023,Q1,300,132.934
+Verizon Communications Inc.,2023,Q2,311,132.615
+Verizon Communications Inc.,2023,Q3,348,132.576
+Verizon Communications Inc.,2023,Q4,357,133.036
