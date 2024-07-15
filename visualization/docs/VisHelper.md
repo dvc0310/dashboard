@@ -39,7 +39,7 @@ vis_helper = VisHelper(df)
 
 ## Methods
 
-### `filter_dataframe(selected_companies=None, start_date=None, end_date=None)`
+### `filter_dataframe`
 - **Purpose**: Filters the DataFrame based on selected companies and date range.
 - **Parameters**:
   - `selected_companies` (list, optional): List of companies to include.
@@ -47,19 +47,19 @@ vis_helper = VisHelper(df)
   - `end_date` (str, optional): End date for filtering data.
 - **Returns**: A filtered DataFrame.
 
-### `group_and_aggregate(df)`
+### `group_and_aggregate`
 - **Purpose**: Groups and aggregates the data by company, calculating the mean of 'Count', 'PP&E', and 'Outage per PP&E'.
 - **Parameters**:
   - `df` (DataFrame): The DataFrame to be grouped and aggregated.
 - **Returns**: A grouped and aggregated DataFrame.
 
-### `perform_regression(grouped_df)`
+### `perform_regression`
 - **Purpose**: Performs a linear regression analysis on the grouped data.
 - **Parameters**:
   - `grouped_df` (DataFrame): The grouped data on which to perform the regression.
 - **Returns**: Regression parameters including slope, intercept, r_value, p_value, residual_std, line_x, and line_y.
 
-### `calculate_prediction_interval(df, pi, residual_std, line_x, line_y)`
+### `calculate_prediction_interval`
 - **Purpose**: Calculates the prediction interval for the regression line.
 - **Parameters**:
   - `df` (DataFrame): The original DataFrame.
@@ -69,7 +69,7 @@ vis_helper = VisHelper(df)
   - `line_y` (array): Y-values for the regression line.
 - **Returns**: Upper and lower prediction intervals.
 
-### `perform_quantile_regression(df, quantile, x)`
+### `perform_quantile_regression`
 - **Purpose**: Performs a quantile regression analysis on the data.
 - **Parameters**:
   - `df` (DataFrame): The DataFrame on which to perform the regression.
@@ -77,7 +77,7 @@ vis_helper = VisHelper(df)
   - `x` (DataFrame): The predictor values.
 - **Returns**: Predicted values, slope, and intercept.
 
-### `calculate_confidence_interval(grouped_df, ci, residual_std, line_x, line_y)`
+### `calculate_confidence_interval`
 - **Purpose**: Calculates the confidence interval for the regression line.
 - **Parameters**:
   - `grouped_df` (DataFrame): The grouped data.
@@ -87,22 +87,16 @@ vis_helper = VisHelper(df)
   - `line_y` (array): Y-values for the regression line.
 - **Returns**: Upper and lower confidence intervals.
 
-### `grand_total(include_grand_total, df_filtered)`
+### `grand_total`
 - **Purpose**: Adds a grand total row to the DataFrame if specified.
 - **Parameters**:
   - `include_grand_total` (bool): Whether to include the grand total.
-  - `df_filtered` (DataFrame): The filtered DataFrame.
+  - `df` (DataFrame): The filtered DataFrame.
 - **Returns**: A DataFrame with the grand total row included if specified.
 
-### `preprocess_data()`
+### `preprocess_data`
 - **Purpose**: Preprocesses the data by mapping company names, converting date columns, and calculating 'Outage per PP&E'.
 - **Action**: Applies necessary transformations and drops rows with missing values in the 'PP&E' column.
-
-## Private Methods
-
-### `__check_columns_exist()`
-- **Purpose**: Checks if the required columns are present in the DataFrame.
-- **Action**: Raises a ValueError if any required columns are missing.
 
 ## Usage
 
