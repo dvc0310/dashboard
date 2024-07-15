@@ -106,7 +106,7 @@ If you don't want to use the terminal directly, you can use these commands on a 
 The dashboard is designed to provide interactive data visualization and analysis tools. Here are some of the key features:
 
 ### Interactive Data Filtering
-- **Description**: Users can filter data based on company, date range, and other criteria to tailor the visualizations to their specific needs. This is available for every visualization.
+- Users can filter data based on company, date range, and other criteria to tailor the visualizations to their specific needs. This is available for every visualization.
 
 ### Regression Analysis
 - This feature offers statistical visualizations that allows users to explore trends in their data. The toggle switch allows users to choose between two modes:
