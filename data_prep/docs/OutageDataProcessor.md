@@ -3,7 +3,7 @@
 
 ## Overview
 
-The `OutageDataProcessor` class is responsible for loading, processing, and aggregating outage data. It filters the data based on specified years and company names, converts date columns to datetime objects, and aggregates data to provide insights into outage frequency over time.
+The `OutageDataProcessor` class is responsible for loading, processing, and aggregating outage data. It filters the data based on specified years and company names, converts date columns to datetime objects, and then aggregates the outage data.
 
 ## Methods Detail
 
