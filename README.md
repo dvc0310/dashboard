@@ -18,7 +18,8 @@ The Dash web application provides two primary key functions. It:
 4. [Obtaining NORS Data](#obtaining-NORS-data)
 5. [Installation](#installation)
 6. [Usage](#usage)
-7. [Code Documentation](#code-documentation)
+7. [Dashboard Features](#dashboard-features)
+8. [Code Documentation](#code-documentation)
 
 ## Prerequisites
 
@@ -44,20 +45,20 @@ Ensure that you have the following project-specific packages:
 - `visualization`: Contains the `PlotlyVisualizer` class for creating visualizations.
 - `data_prep`: Manages the preparation and cleaning of data.
 
-Additionally, financial data from the S&P Capital IQ Pro database is required. See the next section for detailed steps on how to obtain this data.
+Financial data from the S&P Capital IQ Pro database is required. See the next section for detailed steps on how to obtain this data.
 
 ## Obtaining S&P Financial Data
 
 Follow the steps provided [here.](docs/S&P.md)
 
 Note that the file will have to look something like this:
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 
 ## Obtaining NORS Data
 
 You can obtain the NORS dataset only if you're affiliated with the FCC. For testing purposes, you can generate fake outage data in the `fake_data_generator.ipynb` file in the datasets folder. If you do have the real NORS outage data, place the csv file in the `datasets` directory.
 
-![alt text](image-3.png)
+![alt text](images/image-3.png)
 
 
 ## Installation
@@ -82,7 +83,7 @@ python prepare_data.py --directory "datasets" --outage_file "outage_data.csv" --
 
 ### Running the Dashboard
 
-To launch the interactive dashboard, you must specify the paths to the outage and PP&E data files. You can do this via command-line arguments. Use the following command to run the dashboard:
+To launch the dashboard, you have to specify the paths to the outage and PP&E data files. You can do this via command-line arguments. Use this command to run the dashboard:
 
 ```bash
 python dashboard.py --directory "datasets" --outage_file "outage_data.csv" --ppe_file "ppe.xlsx"
@@ -90,14 +91,42 @@ python dashboard.py --directory "datasets" --outage_file "outage_data.csv" --ppe
 
 If you don't want to use the terminal directly, you can use these commands on a Jupyter Notebook file. Open `app.ipynb` and run the cell that contains the data preparation and dashboard commands.
 
+
+
 ### Tips for Running Scripts
 
 - Ensure that Python and all required libraries (as listed in the Prerequisites section) are properly installed in your environment.
-- Verify that the specified data files exist in your directory before running the commands to avoid errors.
-- Adjust the directory path and filenames based on your actual file locations and names.
+- Check that the specified data files exist in your directory before running the commands to avoid errors.
 
 
----
+## Dashboard Features
+
+### Note: The data used here was randomly generated. The visualizations in the screenshots were not created from real outage data.
+
+The dashboard is designed to provide interactive data visualization and analysis tools. Here are some of the key features:
+
+### Interactive Data Filtering
+- **Description**: Users can filter data based on company, date range, and other criteria to tailor the visualizations to their specific needs. This is available for every visualization.
+
+### Regression Analysis
+- This feature offers statistical visualizations that allows users to explore trends in their data. The toggle switch allows users to choose between two modes:
+  - **Aggregated View**: Visualizes each company as an individual data point, which simplifies the overall trends in the dataset.
+  - **Granular View**: Displays data quarterly, which provides a detailed view of outage data.
+  
+  Additional analytical tools include:
+  - **95% Confidence Intervals**: Available in the aggregated view to estimate the reliability of the observed trends.
+  - **Quantile Regression Lines**: Accessible in the granular view, includes the 95th quantile line and the 5th quantile line.
+
+![alt text](images/image%20copy.png)
+
+### Outage Trends Over Time
+- Shows how outage performance metrics change over time, which helps with identifying trends. Also includes lines for quartiles, median, 5th percentile, and 95th percentile.
+![alt text](image.png)
+
+### Boxplot Analysis
+- **Description**: Utilizes boxplots to summarize the distribution of outage data across different companies.
+![alt text](image-1.png)
+
 
 ## Code Documentation
 
@@ -105,4 +134,3 @@ If you don't want to use the terminal directly, you can use these commands on a 
 - **`visualization`**: Package for visualizing the prepared data. [More Info](visualization/README.md)
 - **`data_prep`**: Package for preparing and cleaning data. [More Info](data_prep/README.md)
 
----

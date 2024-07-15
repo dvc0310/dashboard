@@ -42,7 +42,7 @@ def main():
             webbrowser.open_new("http://127.0.0.1:8050/")
 
         Timer(1, open_browser).start()
-        app.run_server(debug=True)
+        app.run_server(debug=False)
         
     except FileNotFoundError as e:
         print(f"Error: {e}")
