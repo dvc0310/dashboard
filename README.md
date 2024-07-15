@@ -30,6 +30,7 @@ Before running this application, the following dependencies must be installed:
 - scipy
 - statsmodels
 - faker
+- chardet
 
 These Python packages can be installed via pip:
 
