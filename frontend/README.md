@@ -4,7 +4,7 @@
 
 ## Overview
 
-The `frontend` package is responsible for defining the user interface and interactivity of the Dash web application. It manages the layout, the callbacks that handle user interactions, and the tabs that segment the data visualization into different views.
+The `frontend` package is responsible for defining the user interface and interactivity of the Dash web application. It manages the layout, the callbacks that handle user interactions, and the tabs that separate the data visualization into different views.
 
 ## Table of Contents
 
