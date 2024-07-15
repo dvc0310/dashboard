@@ -19,7 +19,7 @@ The `FinancialDataTransformer` class is specifically designed for loading, clean
 - **Purpose**: Retrieves the prepared financial data, ensuring it's loaded and prepared only once unless explicitly reset.
 - **Returns**: A pandas DataFrame containing the prepared financial data.
 
-### `set_financial_data(financial_data_file_name, folder='datasets', normalize=False)`
+### `set_financial_data`
 - **Purpose**: Sets the financial data file path and loads the data by initiating the preparation process. Allows for reinitialization with new data parameters.
 - **Parameters**:
   - `financial_data_file_name` (str): The name of the file containing the financial data.
