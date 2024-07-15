@@ -3,7 +3,7 @@
 
 ## Overview
 
-The `FinancialDataTransformer` class is specifically designed for loading, cleaning, and preparing financial data related to property, plant, and equipment (PP&E). This documentation outlines the functions and processes involved in transforming financial data to ensure it is ready for analysis and integration with other data sources.
+The `FinancialDataTransformer` class is specifically designed for loading, cleaning, and preparing financial data related to property, plant, and equipment (PP&E).
 
 ## Methods Detail
 
