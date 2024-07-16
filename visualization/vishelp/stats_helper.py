@@ -33,7 +33,6 @@ class StatsHelper:
             y_pred = results.predict(x[['PP&E']])
             intercept = results.params['Intercept']
             slope = results.params.get('Q("PP&E")', None)
-
             return y_pred, slope, intercept
         except Exception as e:
             print("Error in performing quantile regression:", e)
