@@ -1,8 +1,8 @@
-# Dash Web Application
+# Outage Dashboard Application
 
 ## Overview
 
-The Dash web application provides two primary key functions:
+The Outage Dashboard application provides two primary key functions:
 - **Links Outage Data and Financial Data**: Integrates outage data and financial data from S&P Capital IQ and processes the linked data through custom modules.
 - **Visualizes Processed Data**: Sets up an interactive web-based dashboard and automatically opens this dashboard in a user's default web browser.
 
