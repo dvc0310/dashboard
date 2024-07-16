@@ -17,7 +17,6 @@ The `VisualizationPreprocessor` class is a helper class designed to facilitate t
 4. [Private Methods](#private-methods)
     - [__check_columns_exist](#__check_columns_exist)
 5. [Usage](#usage)
-6. [Conclusion](#conclusion)
 
 ## Initialization
 
