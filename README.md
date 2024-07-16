@@ -1,4 +1,4 @@
-# Dash Web Application Documentation
+# Dash Web Application
 
 ## Overview
 
