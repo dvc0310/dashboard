@@ -123,8 +123,7 @@ class FinancialDataTransformer:
 
     def __align_data(self):
         """
-        Aligns and formats the column headers of the financial data based on specific criteria. This method ensures that
-        column headers are consistent and match expected patterns, facilitating accurate data analysis.
+        Aligns and formats the column headers of the financial data based on specific criteria.
 
         The method contains two nested functions:
         - align_column_headers: Adjusts column names directly from the first row if there are missing or `NaN` values.
@@ -135,8 +134,6 @@ class FinancialDataTransformer:
         2. If checks fail, it attempts to clean the data by dropping completely empty rows and resetting column names from the first data row.
         3. The column headers are then aligned twice to ensure that adjustments take hold, especially in cases where initial headers are incorrect or misplaced.
         4. Continues until the headers are correctly set or until all predefined shifts are attempted.
-
-        Post-processing, the method ensures that the data frame is ready for subsequent steps, such as filtering or further transformations.
         """
         def align_column_headers():
             """ Helper function to replace NaN or incorrect column headers from the first row of the DataFrame. """
