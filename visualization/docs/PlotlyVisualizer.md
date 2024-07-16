@@ -1,4 +1,3 @@
-
 # PlotlyVisualizer Documentation
 
 ## Overview
@@ -24,13 +23,13 @@ The `PlotlyVisualizer` class in the `visualization` package is responsible for g
 ### Example Usage
 
 ```python
-visualizer = PlotlyVisualizer(filename='prepared_data.csv', directory='visualization')
+visualizer = PlotlyVisualizer(filename='prepared_data.csv', directory='datasets')
 ```
 
 ## Methods
 
 ### `load_data`
-- **Purpose**: Loads the data from the specified CSV file and initializes the `VisHelper` object for further data manipulation.
+- **Purpose**: Loads the data from the specified CSV file and initializes the `VisualizationPreprocessor` object for further data manipulation. It also initializes a and `StatHelper`object that will perform statistical coalculations.
 - **Action**: Reads the CSV file, detects encoding, and loads the data into a DataFrame.
 
 ### `update_data`
@@ -77,7 +76,6 @@ visualizer = PlotlyVisualizer(filename='prepared_data.csv', directory='visualiza
   - `end_date` (str, optional): End date for filtering data.
 - **Returns**: A Plotly figure object if `dashboard` is True, otherwise displays the plot.
 
-
 ## Usage
 
 The `PlotlyVisualizer` class can be used to create various interactive plots for analyzing outage data. Here's an example of how to create a scatter plot showing average outage frequency vs. PP&E:
@@ -86,7 +84,7 @@ The `PlotlyVisualizer` class can be used to create various interactive plots for
 from visualization import PlotlyVisualizer
 
 # Initialize the visualizer
-visualizer = PlotlyVisualizer(filename='prepared_data.csv', directory='visualization')
+visualizer = PlotlyVisualizer(filename='prepared_data.csv', directory='datasets')
 
 # Plot average outage frequency vs. PP&E
 visualizer.plot_average_outage_vs_ppe(selected_companies=['CompanyA', 'CompanyB'], start_date='2021-01-01', end_date='2023-01-01')

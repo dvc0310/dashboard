@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: dashboard.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/dashboard.py",
+            "args": ["--directory", "datasets", "--outage_file", "outage_data.csv", "--ppe_file", "ppe.xlsx"],
+            "console": "integratedTerminal"
+        }
+    ]
+}

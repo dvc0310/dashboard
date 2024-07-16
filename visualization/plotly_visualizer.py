@@ -3,8 +3,8 @@ import plotly.express as px
 import plotly.graph_objects as go
 import numpy as np
 from data_prep import find_encoding
-from .vis_helper import VisHelper
-
+from .vishelp.vis_preprocess import VisualizationPreprocessor
+from .vishelp.stats_helper import StatsHelper
 
 class PlotlyVisualizer:
     def __init__(self, filename='prepared_data.csv', directory='datasets'):
@@ -28,7 +28,9 @@ class PlotlyVisualizer:
         """
         csv_path = f'{self.directory}/{self.filename}'
         self.df = pd.read_csv(csv_path, encoding=find_encoding(csv_path))
-        self.vh = VisHelper(self.df)
+        self.vp = VisualizationPreprocessor(self.df)
+        self.df = self.vp.preprocess_data(self.df)
+        self.sh = StatsHelper(self.df)
 
     def update_data(self):
         """
@@ -52,11 +54,11 @@ class PlotlyVisualizer:
             plotly.graph_objs.Figure: The figure object with the plotted data, if dashboard is True.
         """
         # Filters the data by company, start date, and end date
-        df_filtered = self.vh.filter_dataframe(selected_companies, start_date, end_date)
+        df_filtered = self.vp.filter_dataframe(self.df, selected_companies, start_date, end_date)
 
         # Aggregates the data by Company and gives average PP&E and average outage count
-        grouped_df = self.vh.group_and_aggregate(df_filtered)
-        slope, intercept, r_value, _, std_err, line_x, line_y = self.vh.perform_regression(grouped_df)
+        grouped_df = self.vp.group_and_aggregate(df_filtered)
+        slope, intercept, r_value, _, std_err, line_x, line_y = self.sh.perform_regression(grouped_df)
 
         # Creates a scatter plot and then adds in regression line
         fig = self.__create_scatter_plot(grouped_df, interval=enable_interval)
@@ -64,7 +66,7 @@ class PlotlyVisualizer:
 
         # Draws confidence intervals if enable_ci is True
         if enable_interval:
-            ci_upper, ci_lower = self.vh.calculate_confidence_interval(grouped_df, interval_percent, std_err, line_x, line_y)
+            ci_upper, ci_lower = self.sh.calculate_confidence_interval(grouped_df, interval_percent, std_err, line_x, line_y)
             self.__add_confidence_intervals(fig, line_x, ci_upper, ci_lower)
 
         if dashboard:
@@ -88,16 +90,16 @@ class PlotlyVisualizer:
         """
         
         # Filters the data by company, start date, and end date
-        df_filtered = self.vh.filter_dataframe(selected_companies, start_date, end_date)
+        df_filtered = self.vp.filter_dataframe(self.df, selected_companies, start_date, end_date)
 
         # Generate 100 linearly spaced points between the minimum and maximum values of the 'PP&E' column.
         line_x = np.linspace(df_filtered['PP&E'].min(), df_filtered['PP&E'].max(), 100)
         x = pd.DataFrame(line_x, columns=["PP&E"])
 
         # Using quantile regression for the median and the quantile intervals
-        line_y_50, slope, intercept = self.vh.perform_quantile_regression(df_filtered, 0.50, x)
-        line_y_95,slope95, intercept95  = self.vh.perform_quantile_regression(df_filtered, 0.95, x)
-        line_y_05, slope5, intercept5= self.vh.perform_quantile_regression(df_filtered, 0.05, x)
+        line_y_50, slope, intercept = self.sh.perform_quantile_regression(df_filtered, 0.50, x)
+        line_y_95,slope95, intercept95  = self.sh.perform_quantile_regression(df_filtered, 0.95, x)
+        line_y_05, slope5, intercept5= self.sh.perform_quantile_regression(df_filtered, 0.05, x)
         
         # Creates a scatter plot and plots data points
         fig = self.__create_scatter_plot(df_filtered, interval=enable_interval)
@@ -135,7 +137,7 @@ class PlotlyVisualizer:
         """
        
         # Filters the data by company, start date, and end date
-        df_filtered = self.vh.filter_dataframe(selected_companies, start_date, end_date)
+        df_filtered = self.vp.filter_dataframe(self.df, selected_companies, start_date, end_date)
 
         # Creates a line chart of Outages per PP&E over time
         fig = self.__create_outage_time_plot(df_filtered)
@@ -166,10 +168,10 @@ class PlotlyVisualizer:
             plotly.graph_objs.Figure: The plotted figure, if dashboard is True.
         """
         # Filters the data by company, start date, and end date
-        df_filtered = self.vh.filter_dataframe(selected_companies, start_date, end_date)
+        df_filtered = self.vp.filter_dataframe(self.df, selected_companies, start_date, end_date)
 
         # Controls whether to include a boxplot that is an aggreagate of all company data
-        data = self.vh.grand_total(include_grand_total=include_grand_total, df_filtered=df_filtered)
+        data = self.vp.grand_total(include_grand_total=include_grand_total, df=df_filtered)
 
         # Rounds Outage Per PP&E
         data['Outage per PP&E Rounded'] = data['Outage per PP&E'].round(1)
