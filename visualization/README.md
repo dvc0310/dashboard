@@ -15,7 +15,7 @@ The `visualization` package provides tools for preprocessing, analyzing, and vis
 ## Components
 
 ### 1. VisHelper
-The `VisHelper` class is designed to facilitate the preprocessing and analysis of outage data. It provides methods to filter, aggregate, and perform statistical analyses on the data, preparing it for visualization.
+The `VisHelper` class is designed to facilitate the preprocessing and analysis of outage data. It provides methods to filter, aggregate, and perform statistical analyses on the data.
 
 - **Features**:
   - Data filtering by company and date range.
