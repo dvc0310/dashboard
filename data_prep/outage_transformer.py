@@ -1,12 +1,12 @@
 import pandas as pd
 import logging
 from .read_util import find_encoding
-from config import company_aliases
+from config.config import company_aliases
 
 import pandas as pd
 import logging
 from .read_util import find_encoding
-from config import company_aliases
+from config.config import company_aliases
 
 class OutageDataProcessor:
     def __init__(self, outage_file_name, start_year, end_year, folder="datasets"):

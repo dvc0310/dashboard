@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from config import company_aliases_2, quarters_mapping
+from config.config import company_aliases_2, quarters_mapping
 import scipy.stats as stats
 import statsmodels.api as sm
 import statsmodels.formula.api as smf

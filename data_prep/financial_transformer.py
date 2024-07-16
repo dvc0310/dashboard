@@ -1,7 +1,7 @@
 import pandas as pd
 import re
 from .read_util import find_encoding, read_file
-from config import company_aliases
+from config.config import company_aliases
 import os
 import numpy as np
 
