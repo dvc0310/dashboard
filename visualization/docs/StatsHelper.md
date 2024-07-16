@@ -14,7 +14,6 @@ The `StatsHelper` class is a helper class designed to perform statistical analys
     - [perform_quantile_regression](#perform_quantile_regression)
     - [calculate_confidence_interval](#calculate_confidence_interval)
 4. [Usage](#usage)
-5. [Conclusion](#conclusion)
 
 ## Initialization
 
