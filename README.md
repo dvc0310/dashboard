@@ -115,7 +115,8 @@ The dashboard is designed to provide interactive data visualization and analysis
   
   Additional analytical tools include:
   - **95% Confidence Intervals**: Available in the aggregated view to estimate the reliability of the observed trends.
-  - **Quantile Regression Lines**: Accessible in the granular view, includes the 95th quantile line and the 5th quantile line.
+  - **Quantile Regression Upper and Lower Bound Lines**: Accessible in the granular view, includes the 95th quantile line and the 5th quantile line.
+  **Note:** The original developer of this project is not a Statistician, so it may be possible that the data does not fully satisfy the assumptions required for linear regression confidence intervals or quantile regression upper and lower bound lines. This section is provided for illustrative purposes and is subject to changes.
 
 ![alt text](images/image%20copy.png)
 
