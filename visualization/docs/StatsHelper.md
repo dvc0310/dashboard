@@ -36,16 +36,6 @@ stats_helper = StatsHelper(df)
   - `grouped_df` (DataFrame): The grouped data on which to perform the regression.
 - **Returns**: Regression parameters including slope, intercept, r_value, p_value, residual_std, line_x, and line_y.
 
-### `calculate_prediction_interval`
-- **Purpose**: Calculates the prediction interval for the regression line.
-- **Parameters**:
-  - `df` (DataFrame): The original DataFrame.
-  - `pi` (float): Prediction interval percentage.
-  - `residual_std` (float): Standard deviation of residuals.
-  - `line_x` (array): X-values for the regression line.
-  - `line_y` (array): Y-values for the regression line.
-- **Returns**: Upper and lower prediction intervals.
-
 ### `perform_quantile_regression`
 - **Purpose**: Performs a quantile regression analysis on the data.
 - **Parameters**:
