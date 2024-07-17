@@ -2,7 +2,7 @@
 
 ## Overview
 
-The `StatsHelper` class is a helper class designed to perform statistical analyses on outage data in relation to property, plant, and equipment (PP&E) values. This class provides methods to perform linear regression, quantile regression, and calculate prediction and confidence intervals.
+The `StatsHelper` class is a helper class designed to perform statistical analyses on outage data in relation to property, plant, and equipment (PP&E) values. This class provides methods to perform linear regression, quantile regression, calculate 95th/5th quantiles, and confidence intervals.
 
 ## Table of Contents
 
